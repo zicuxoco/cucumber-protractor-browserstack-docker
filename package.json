@@ -1,0 +1,46 @@
+{
+  "name": "cucumber-protractor-browserstack-docker",
+  "version": "1.0.0",
+  "scripts": {
+    "e2e-tests": "protractor e2e/conf/local_conf.js",
+    "test": "npm-run-all e2e-tests after-test --continue-on-error",
+    "after-test": "node e2e/step_definitions/utils/reporter_hooks.js",
+    "webdriver-update": "webdriver-manager update"
+  },
+  "dependencies": {
+    "aws-sdk": "2.7.15",
+    "aws-xray-sdk": "1.1.2",
+    "babel-cli": "^6.26.0",
+    "bluebird": "~3.3.4",
+    "body-parser": "~1.13.2",
+    "chromedriver": "^2.33.2",
+    "cookie-parser": "~1.3.5",
+    "debug": "~2.2.0",
+    "diff-match-patch": "~1.0.0",
+    "express": "~4.13.1",
+    "jira-api": "^0.2.2",
+    "lodash": "^4.0.1",
+    "morgan": "~1.6.1",
+    "multiple-cucumber-html-reporter": "^1.4.0",
+    "node-slack-upload": "^1.2.1",
+    "promise": "^7.1.1",
+    "request": "^2.69.0",
+    "serve-favicon": "~2.3.0",
+    "slack-node": "^0.1.8",
+    "winston": "^2.1.1"
+  },
+  "devDependencies": {
+    "browserstack-local": "^1.0.0",
+    "chai": "^3.5.0",
+    "chai-as-promised": "4.1.1",
+    "chance": "^1.0.10",
+    "cucumber": "^1.3.3",
+    "cucumber-html-reporter": "^3.0.4",
+    "mocha": "2.4.5",
+    "npm-run-all": "^4.1.2",
+    "protractor": "^5.1.2",
+    "protractor-cucumber-framework": "3.1.1",
+    "protractor-screenshot-reporter": "0.0.5",
+    "should": "8.3.1"
+  }
+}
