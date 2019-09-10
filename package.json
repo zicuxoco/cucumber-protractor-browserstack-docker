@@ -20,7 +20,7 @@
     "express": "~4.13.1",
     "jira-api": "^0.2.2",
     "lodash": "^4.0.1",
-    "morgan": "~1.6.1",
+    "morgan": "~1.9.1",
     "multiple-cucumber-html-reporter": "^1.4.0",
     "node-slack-upload": "^1.2.1",
     "promise": "^7.1.1",
