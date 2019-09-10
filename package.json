@@ -2,7 +2,7 @@
   "name": "cucumber-protractor-browserstack-docker",
   "version": "1.0.0",
   "scripts": {
-    "e2e-tests": "protractor e2e/conf/local_conf.js",
+    "e2e-tests": "protractor e2e/conf/browserStack_conf.js",
     "test": "npm-run-all e2e-tests after-test --continue-on-error",
     "after-test": "node e2e/step_definitions/utils/reporter_hooks.js",
     "webdriver-update": "webdriver-manager update"
@@ -27,7 +27,8 @@
     "request": "^2.69.0",
     "serve-favicon": "~2.3.0",
     "slack-node": "^0.1.8",
-    "winston": "^2.1.1"
+    "winston": "^2.1.1",
+    "npm-run-all": "^4.1.2"
   },
   "devDependencies": {
     "browserstack-local": "^1.0.0",

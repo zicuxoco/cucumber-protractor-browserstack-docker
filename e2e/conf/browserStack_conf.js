@@ -9,14 +9,14 @@ exports.config = {
 
     'seleniumAddress': 'http://hub-cloud.browserstack.com/wd/hub',
 
-    baseUrl: 'https://arcpublishing-staging.okta.com',
+    baseUrl: 'https://github.community/',
 
-    specs: ['../features/devci/*.feature'],
+    specs: ['../features/*.feature'],
 
 
     'commonCapabilities': {
-        'browserstack.user': process.env.BROWSERSTACK_USERNAME || 'browserstackuser35',
-        'browserstack.key': process.env.BROWSERSTACK_ACCESS_KEY || 'GFMWYmY9JVHYTMDYAdyC',
+        'browserstack.user': process.env.BROWSERSTACK_USERNAME || 'ramirezramirez1',
+        'browserstack.key': process.env.BROWSERSTACK_ACCESS_KEY || 'scqywDSsy3xLBbVA8Xno',
         'getPageTimeout': 40000,
         'allScriptsTimeout': 40000,
         'build': 'protractor-browserstack',
@@ -47,7 +47,7 @@ exports.config = {
             '../step_definitions/hooks/*.js',
             '../step_definitions/*_steps.js'],
         format: 'pretty',
-        tags: '@delete, @sections',
+        tags: '@publish',
         keepAlive: true,
         skipStrictParameterCheck: true
     },
